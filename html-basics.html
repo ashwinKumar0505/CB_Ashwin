@@ -4,6 +4,7 @@
   table, th, td{
     border:1px solid black;
     border-collapse: collapse;
+    margin-left:600px;
   }
   th,td{
     padding:15px;
@@ -19,6 +20,7 @@
 <img src="images.png" alt="code brahma logo" width="200px" height="200px"><br>
 <button>This is button</button>
 <div id="lists" style="background-color: cadetblue">
+<h1><center>LISTS</center></h1>
 <ul>
   <li>This</li>
   <li>is</li>
@@ -31,9 +33,10 @@
   <li>ordered</li>
   <li>list</li>
 </ol>
+<br>
 </div>
 <div id="text_format" style="background-color: rgb(109, 126, 126)">
-<h3>Now It is all about Text formatting</h3>
+<h1><center>Text formatting</center></h1>
 <p><b>This is Bold Tag.</b></p>
 <p><strong>This is Strong Tag.</strong></p>
 <p><i>this is Itallic Tag.</i></p>
@@ -44,7 +47,7 @@
 <p>this is <ins>insert</ins> Tag.</p>
 <p>This is <sub>subscripted</sub> Tag.</h3>
 <p>this is <sup>superscripted</sup> Tag.</p>
-<h3>^.^These are the Text formatting options^.^</h3>
+<br>
 </div>
 <p><q>This is quotation Tag.</q></p>
 <p>This is <abbr title="Abbreavation">abbr</abbr> Tag</p>
@@ -54,7 +57,7 @@ Virudhunagar.</address>
 <p></p><cite>The JavaScript</cite> Created By Brendan Eich ^!^</p>
 <p>The above is cite Tag(It is mostly used in the titles).</p>
 <p>This is bidirectional override Tag...<bdo dir="rtl">This will return text in reverse.</bdo></p>
-<h3>the Below is table tag.</h3>
+<h1><center>Table Tag</center></h1>
 <table style="width:30%">
 <tr>
   <th>FirstName</th>
@@ -73,7 +76,51 @@ Virudhunagar.</address>
 </tr></table>
 
 <h4>This is <span style="border: 2px solid blue">span</span> Tag. </h4>
-
+<h1><center>Forms and Input Fields</center></h1>
+<br>
+<form action="" type="get" oninput="res.value=parseInt(age.value)" autocomplete="on">
+<fieldset>
+<legend>Personal Information:</legend>
+<p>First Name:<input type="text" id="FN" maxlength="20"></p>
+<p>Last Name:<input type="text" id="LN" maxlength="20"></p>
+<p>Age: 0<input type="range" name="age" id="age" min="0" max="100">100  &nbsp;&nbsp;<output name="res"></output> </p>
+<p>DOB:<input type="date" name="dob"></p>
+Gender:
+<input type="radio" name="gender" value="Male" style="margin-left: 45px" selected>Male<br>
+<input type="radio" name="gender" value="Female" style="margin-left: 100px">Female<br>
+<input type="radio" name="gender" value="Other" style="margin-left: 100px">Other<br><br> 
+Email-Address:<input type="email" name="email"> <br><br>
+Phone-Number: +<input type="text" name="country_code" size="3px" value="91" readonly  > &nbsp;&nbsp;<input type="tel" name="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" placeholder="####-###-####" required> 
+<br>
+</fieldset>
+<br>
+profession:
+<select name="profession">
+ <option value="cs" selected>Computer Science</option>
+ <option value="mech">mechanical</option>
+ <option value="ece">Electronics and communication</option>
+</select><br><br>
+The Languages you know:<br>
+<input type="checkbox" name="lang" value="java" style="margin-left:100px">Java<br>
+<input type="checkbox" name="lang" value="js" style="margin-left:100px">JavaScript<br>
+<input type="checkbox" name="lang" value="phython" style="margin-left:100px">Phython<br>
+<input type="checkbox" name="lang" value="c_plus" style="margin-left:100px">C++<br>
+<br>
+Your Favourite Computer Language:
+<input list="languages" name="language">
+<datalist id="languages">
+  <option value="c">
+  <option value="c++">
+  <option value="Java">
+  <option value="JavaScript">
+  <option value="Phython">
+</datalist><br><br>
+Your marks in percentage:<input type="number" min="0" max="100" step="0.1">%
+<p>Tell about yourself:</p>
+<textarea id="msg" rows="10" cols="30"></textarea><br><br>
+Upload your Resume:<input type="file" name="file"><br><br>
+<input type="submit" value="submit" style="margin-left: 100px">
+</form>
 
 
 
