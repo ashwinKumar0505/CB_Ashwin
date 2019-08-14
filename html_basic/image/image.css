@@ -1,0 +1,16 @@
+.goku{
+  height:130px;
+  width:130px;
+  position: relative;
+  left:400px;
+  bottom:30px;
+}
+.touch{
+  display:inline;
+  z-index:-1;
+  position: relative;
+  top:-132px;
+}
+.goku:hover .touch{
+  z-index:0;
+}

@@ -1,0 +1,9 @@
+ table.s_table tr th,table.s_table tr td,table.t_table tr th,table.t_table tr td  {
+      border:2px solid black;
+      background-image:linear-gradient(#d7d2cc,white);
+      padding:10px;
+    }
+table.s_table,table.t_table{
+  border-collapse: collapse;
+}
+     

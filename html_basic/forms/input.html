@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <style>
+    body{
+      font-family: 'Times New Roman', Times, serif;
+      font-size:20px;
+      background-image: linear-gradient(#348F50,#56B4D3)
+    }
+    #FN,#LN,#dob,#age1,#email,#mob,#fav,#mark,#file{
+      position:absolute;
+      left:500px;
+      
+    }
+    #FN,#LN,#dob,#email,#fav,#mark,#file{
+       width:300px;
+       padding: 12px 20px;
+       display: inline-block;
+       border: 1px solid #ccc;
+       border-radius: 4px;
+       box-sizing: border-box;
+    }
+    #age1{
+      position: absolute;
+      bottom:550px;
+    }
+    #gen{
+      position:absolute;
+      top:430px;
+      left:400px;
+    }
+    #prof{
+      position: relative;
+      left:500px;
+      bottom:15px;
+    }
+    #lang{
+      position:relative;
+      left:400px;
+      bottom:15px;
+    }
+    #submit{
+      padding:20px 30px;
+      background-image: linear-gradient(#1FA2FF,#A6FFCB)
+
+    }
+    </style>
+    </head>
+    <body  background="white.jpg">
+    
+<h1><center>Forms and Input Fields</center></h1>
+<br>
+<form action="" type="GET" oninput="res.value=parseInt(age.value)" autocomplete="on">
+<fieldset>
+<legend>Personal Information:</legend>
+<p>First Name:<input type="text" id="FN" maxlength="20"></p>
+<br>
+<p>Last Name:<input type="text" id="LN" maxlength="20"></p>
+<br>
+Age: <p id=age1>0<input type="range" id="age" min="0" max="100">100  &nbsp;&nbsp;The age is <output name="res"></output> </p>
+<br>
+<br>
+<p>DOB:<input type="date" id="dob" name="input"></p>
+<br>
+Gender:<br>
+<p id="gen"><input type="radio" name="gender" value="Male" style="margin-left: 100px" selected >Male
+<input type="radio" name="gender" value="Female" style="margin-left: 100px">Female
+<input type="radio" name="gender" value="Other" style="margin-left: 100px">Other</p><br><br> 
+<br>
+Email-Address:<input type="email" id="email"> <br><br><br><br>
+Phone-Number: <span id="mob">+<input type="text" name="country_code" size="3px" value="91" readonly name="input"  > &nbsp;&nbsp;<input type="tel" name="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" placeholder="####-###-####" required name="input"> </span>
+<br>
+<br>
+</fieldset>
+<br>
+<br>
+Profession:
+<div id="prof">
+<select name="profession">
+ <option value="cs" selected>Computer Science</option>
+ <option value="mech">mechanical</option>
+ <option value="ece">Electronics and communication</option>
+</select><br><br><br></div>
+
+The Languages you know:<div id="lang">
+<input type="checkbox" name="lang" value="java" style="margin-left:100px">Java
+<input type="checkbox" name="lang" value="js" style="margin-left:100px">JavaScript
+<input type="checkbox" name="lang" value="phython" style="margin-left:100px">Phython
+<input type="checkbox" name="lang" value="c_plus" style="margin-left:100px">C++
+</div><br><br><br>
+Your Favourite Computer Language:
+<input list="languages" name="language" id="fav">
+<datalist id="languages">
+  <option value="c">
+  <option value="c++">
+  <option value="Java">
+  <option value="JavaScript">
+  <option value="Phython">
+</datalist><br><br><br>
+Your marks in percentage:<input type="number" min="0" max="100" step="0.1" id="mark">%
+<div style="margin:50px 30px 50px 0px"><p>Tell about yourself:</p>
+<textarea style="position: relative;left:490px;bottom:50px"  rows="10" cols="30" id="yourself"></textarea></div><br><br>
+Upload your Resume:<input type="file" id="file"><br><br>
+<center><input type="submit" value="submit" style="margin-left: 100px" id="submit"></center>
+</form>
+
+</body>
+</html>

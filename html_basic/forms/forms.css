@@ -1,0 +1,15 @@
+    
+    table.s_table tr th ,table.s_table tr td{
+      border:2px solid black;
+      padding:30px;
+      width:1000px;
+      background-image:linear-gradient(#d7d2cc,white);
+      font-size:15px;
+        }
+    
+.code,.output{
+  transition:0.5s
+}    
+.code:hover,.output:hover{
+ transform: scale(1.25,1.25)
+}
