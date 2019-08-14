@@ -14,3 +14,6 @@
 .goku:hover .touch{
   z-index:0;
 }
+#second{
+  flex-basis: 50%;
+}
